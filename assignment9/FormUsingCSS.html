@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+body{
+background-image:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+background-size:cover;
+background-position:center;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+width:420px;
+background:rgba(255,255,255,0.95);
+padding:25px;
+border-radius:12px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+background:yellow;
+padding:5px;
+}
+
+label{
+font-weight:bold;
+display:block;
+margin-top:10px;
+}
+
+input, textarea, select{
+width:100%;
+padding:8px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+textarea{
+resize:none;
+}
+
+.skills{
+margin-top:8px;
+}
+
+.skills input{
+width:auto;
+margin-right:5px;
+}
+
+.buttons{
+margin-top:15px;
+text-align:center;
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.submit{
+background:#28a745;
+color:white;
+}
+
+.reset{
+background:#dc3545;
+color:white;
+}
+
+button:hover{
+opacity:0.8;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Registration Form</h2>
+
+<form action="submitted.html">
+
+<label>First Name:</label>
+<input type="text" required>
+
+<label>Middle Name:</label>
+<input type="text">
+
+<label>Last Name:</label>
+<input type="text">
+
+<label>Address:</label>
+<textarea rows="3"></textarea>
+
+<label>Mobile Number:</label>
+<input type="tel">
+
+<label>College Name:</label>
+<select>
+<option>Select College</option>
+<option>Pune University</option>
+<option>COEP College</option>
+<option>MIT College</option>
+<option>DY Patil College</option>
+</select>
+
+<label>Branch Name:</label>
+<select>
+<option>Select Branch</option>
+<option>Computer Engineering</option>
+<option>Information Technology</option>
+<option>Mechanical Engineering</option>
+<option>Civil Engineering</option>
+</select>
+
+<label>Technical Skills:</label>
+
+<div class="skills">
+<input type="checkbox"> C
+<input type="checkbox"> C++
+<input type="checkbox"> Java
+<input type="checkbox"> Python
+<input type="checkbox"> JavaScript
+</div>
+
+<div class="buttons">
+<button class="submit">Submit</button>
+<button class="reset" type="reset">Clear</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>

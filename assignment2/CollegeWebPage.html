@@ -1,0 +1,153 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Web Page</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+}
+
+/* Background Video */
+#bg-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Header */
+header{
+    background-image:url("CCC.jpg");
+    color:rgb(233, 208, 208);
+    padding:20px;
+    text-align:center;
+}
+
+/* Navigation */
+nav{
+    background:#004080;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:red;
+}
+
+/* Container */
+.container{
+    padding:20px;
+}
+
+/* Department Cards */
+.department{
+    background:rgba(255, 252, 252, 0.81);
+    margin:20px 0;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgb(207, 78, 78);
+
+}
+
+.department img{
+    width:100%;
+    max-width:500px;
+    border-radius:10px;
+}
+
+/* Footer */
+footer{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Background Video -->
+<video autoplay muted loop id="bg-video">
+    <source src="bg.mp4" type="video/mp4">
+</video>
+
+<header>
+<h1>D.Y.Patil College of Engineering and Technology Kolhapur</h1>
+<p>Excellence in Technical Education</p>
+</header>
+
+<nav>
+<a href="#cse">CSE</a>
+<a href="#it">IT</a>
+<a href="#mech">Mechanical</a>
+<a href="#civil">Civil</a>
+<a href="#ENTC">ENTC</a>
+<a href="#EE">ELECTRICAL</a>
+</nav>
+
+<div class="container">
+
+<div class="department" id="cse">
+<h2>&#128187; Computer Science Engineering</h2>
+<img src="cse.jpg" alt="CSE Department">
+<p>Focus on programming, AI, software development, and data science.</p>
+</div>
+
+<div class="department" id="it">
+<h2>&#127760; Information Technology</h2>
+<img src="it.jpg" alt="IT Department">
+<p>Focus on networking, databases, and information systems.</p>
+</div>
+
+<div class="department" id="mech">
+<h2>&#9881; Mechanical Engineering</h2>
+<img src="mech.jpg" alt="Mechanical Department">
+<p>Focus on machines, manufacturing, and thermal engineering.</p>
+</div>
+
+<div class="department" id="civil">
+<h2>&#127959; Civil Engineering</h2>
+<img src="civil.jpg" alt="Civil Department">
+<p>Focus on construction, structures, and infrastructure development.</p>
+</div>
+
+<div class="department" id="ENTC">
+<h2>&#128225; Electronics & Communication Engineering</h2>
+<img src="entc.jpg" alt="ENTC Department">
+<p>Focus on communication systems and electronic devices.</p>
+</div>
+
+<div class="department" id="EE">
+<h2>&#9889; Electrical Engineering</h2>
+<img src="ee.jpg" alt="Electrical Department">
+<p>Focus on power systems and electrical machines.</p>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 D.Y.Patil College of Engineering and Technology Kolhapur | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+```

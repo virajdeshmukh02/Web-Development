@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Page</title>
+</head>
+<body style="display:flex; justify-content:center; align-items:center; height:100vh;" >
+<div>
+<h2 style="text-align:center;"><mark>Student Registration Form</mark></h2>
+
+<form action="RegistrationSuccessful.html" method="get">
+
+<div>
+<label><b>First Name:<b></label><br>
+<input type="text" id="firstname" name="firstname" required>
+</div>
+<br>
+
+<div>
+<label>Middle Name:</label><br>
+<input type="text" id="middlename" name="middlename">
+</div>
+<br>
+
+<div>
+<label>Last Name:</label><br>
+<input type="text" id="lastname" name="lastname" required>
+</div>
+<br>
+
+<div>
+<label>Address:</label><br>
+<textarea id="address" name="address" rows="4" cols="30" required></textarea>
+</div>
+<br>
+
+<div>
+<label>Mobile Number:</label><br>
+<input type="tel" id="mobile" name="mobile" required>
+</div>
+<br>
+
+<div>
+<label>College Name:</label><br>
+<select id="college" name="college" required>
+<option value="">Select College</option>
+<option>DYPCET</option>
+<option>DYPCEM</option>
+</select>
+</div>
+<br>
+
+<div>
+<label for="branch">Branch Name:</label><br>
+<select id="branch" name="branch" required>
+<option value="">Select Branch</option>
+<option>Computer Engineering</option>
+<option>Information Technology</option>
+<option>Mechanical</option>
+<option>Electrical</option>
+<option>Civil</option>
+</select>
+</div>
+<br>
+
+
+<div>
+<label>Technical Skills:</label><br>
+<input type="checkbox" name="skill" value="C"> C
+<input type="checkbox" name="skill" value="C++"> C++
+<input type="checkbox" name="skill" value="Java"> Java
+<input type="checkbox" name="skill" value="Python"> Python
+</div>
+<br>
+       
+<div>
+<input type="submit" value="Submit">
+<input type="reset" value="clear">
+</div>
+
+
+
+</form>
+
+</div>
+</body>
+</html>
